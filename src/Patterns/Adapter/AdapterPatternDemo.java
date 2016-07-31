@@ -1,15 +1,16 @@
 package Patterns.Adapter;
 
+import Patterns.Adapter.MediaPlayer;
+
 public class AdapterPatternDemo {
 
 	public static void main(String[] args) {
+		MediaPlayer audioPlayer = new AudioPlayer();
 		
-		MediaPlayer myPlayer = new AudioPlayer();
-		
-		myPlayer.play("mp3", "Thrilling.mp3");
-		myPlayer.play("mp4", "alone.mp4");
-		myPlayer.play("vlc", "far far away.vlc");
-		myPlayer.play("avi", "mind me.avi");
+		audioPlayer.play("mp3", "beyond the horizon.mp3");
+	    audioPlayer.play("mp4", "alone.mp4");
+	    audioPlayer.play("vlc", "far far away.vlc");
+	    audioPlayer.play("avi", "mind me.avi");
 	}
 
 }
